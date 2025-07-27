@@ -55,13 +55,13 @@
   <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
     (function() {
-      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID (e.g., user_789xyz)
+      emailjs.init("qkjJ_hKBDHdkKkNzU"); // Replace with your EmailJS User ID (e.g., user_789xyz)
     })();
 
     document.getElementById('waitlistForm').addEventListener('submit', function(event) {
       event.preventDefault();
       const email = document.getElementById('emailInput').value;
-      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", { email: email }) // Replace with your Service ID (e.g., service_abcdef) and Template ID (e.g., template_123456)
+      emailjs.send("service_8dnis73", "template_s01z6ld", { email: email }) // Replace with your Service ID (e.g., service_abcdef) and Template ID (e.g., template_123456)
         .then(() => {
           alert('Thank you for joining the DosaBots Robotics waitlist!');
           document.getElementById('emailInput').value = '';
